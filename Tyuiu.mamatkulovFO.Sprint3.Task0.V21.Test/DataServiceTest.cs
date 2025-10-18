@@ -13,7 +13,7 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task0.V21.Test
             // Act
             double actual = MathService.CalculateSum(a);
 
-            // Assert — 3 xonagacha aniqlikda solishtirish
+           
             Assert.AreEqual(expected, actual: 3);
         }
     }
