@@ -5,12 +5,12 @@ using System;
 
 class Program
 {
-    public static double CalculateSum(double a)
+    static void Main()
     {
-        double sum = 0;
-        for (int k = 1; k <= 13; k++)
-            sum += (Math.Pow(a, k) + 0.25) * Math.Sin(k);
-        return sum;
+        double a = 1.5;
+        double result = DataService.CalculateSum(a);
+        System.Globalization.CultureInfo inv = System.Globalization.CultureInfo.InvariantCulture;
+        Console.WriteLine(result.ToString("F3", inv));
     }
 }
 

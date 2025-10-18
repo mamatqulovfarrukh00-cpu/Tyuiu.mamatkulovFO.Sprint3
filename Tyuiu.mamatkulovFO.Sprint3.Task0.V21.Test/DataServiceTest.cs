@@ -4,6 +4,7 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task0.V21.Test
     [TestClass]
     public class DataServiceTest
     {
+        [Fact]
         public void CalculateSum_ForA1_5_ShouldBeApproximatelyMinus63_727()
         {
             // Arrange
@@ -11,9 +12,9 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task0.V21.Test
             double expected = -63.727;
 
             // Act
-            double actual = MathService.CalculateSum(a);
+            double actual = DataService.CalculateSum(a);
 
-           
+            // Assert 
             Assert.AreEqual(expected, actual: 3);
         }
     }

@@ -14,8 +14,14 @@ public class DataService:ISprint3Task0V21
         return sum; 
     }
 
-    public double GetSumSeries(double value, int startValue, int stopValue)
+    double ISprint3Task0V21.GetSumSeries(double value, int startValue, int stopValue)
     {
         throw new NotImplementedException();
     }
 }
+
+
+
+
+
+   
