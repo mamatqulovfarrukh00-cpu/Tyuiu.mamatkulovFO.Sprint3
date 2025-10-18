@@ -10,7 +10,7 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task0.V21.Lib
             {
                 sum += (Math.Pow(a, k) + 0.25) * Math.Sin(k);
             }
-            return sum;
+            return sum; // 👈 Bu muhim! Qaytarish kerak!
         }
 
         public double GetSumSeries(double value, int startValue, int stopValue)
