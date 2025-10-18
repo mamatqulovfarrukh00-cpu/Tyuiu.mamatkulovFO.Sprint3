@@ -8,19 +8,15 @@ class Program
     static void Main()
     {
         double a = 1.5;
-        double result = CalculateSum(a);
-        Console.WriteLine($"{result:F3}"); 
-    }
-
-    
-    public static double CalculateSum(double a)
-    {
         double sum = 0;
+
         for (int k = 1; k <= 13; k++)
         {
             sum += (Math.Pow(a, k) + 0.25) * Math.Sin(k);
         }
-        return sum; 
+
+        
+        Console.WriteLine(sum.ToString("F3", CultureInfo.InvariantCulture));
     }
 }
 
