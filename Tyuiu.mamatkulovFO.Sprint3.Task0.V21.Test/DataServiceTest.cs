@@ -1,10 +1,12 @@
-﻿using Tyuiu.mamatkulovFO.Sprint3.Task0.V21.Lib;
-namespace Tyuiu.mamatkulovFO.Sprint3.Task0.V21.Test
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Tyuiu.mamatkulovF0.Sprint3.Task0.V21.Lib;
+
+namespace Tyuiu.mamatkulovF0.Sprint3.Task0.V21.Test
 {
     [TestClass]
     public class DataServiceTest
     {
-        [Fact]
+        [TestMethod]
         public void CalculateSum_ForA1_5_ShouldBeApproximatelyMinus63_727()
         {
             // Arrange
@@ -14,8 +16,8 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task0.V21.Test
             // Act
             double actual = DataService.CalculateSum(a);
 
-            // Assert 
-            Assert.AreEqual(expected, actual: 3);
+            // Assert
+            Assert.AreEqual(expected, actual, 3); 
         }
     }
 }

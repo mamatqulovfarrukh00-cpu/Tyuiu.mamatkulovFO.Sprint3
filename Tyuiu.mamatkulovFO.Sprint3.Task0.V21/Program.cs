@@ -1,7 +1,6 @@
-﻿using Tyuiu.mamatkulovFO.Sprint3.Task0.V21.Lib;
-namespace Tyuiu.mamatkulovFO.Sprint3.Task0.V21;
-using System;
-
+﻿using System;
+using Tyuiu.mamatkulovF0.Sprint3.Task0.V21;
+using Tyuiu.mamatkulovF0.Sprint3.Task0.V21.Lib;
 
 class Program
 {
@@ -10,7 +9,6 @@ class Program
         double a = 1.5;
         double result = DataService.CalculateSum(a);
         System.Globalization.CultureInfo inv = System.Globalization.CultureInfo.InvariantCulture;
-        Console.WriteLine(result.ToString("F3", inv));
+        Console.WriteLine(result.ToString("F3", inv)); 
     }
 }
-

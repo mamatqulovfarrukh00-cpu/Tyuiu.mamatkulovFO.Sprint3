@@ -1,27 +1,28 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint3;
-namespace Tyuiu.mamatkulovFO.Sprint3.Task0.V21.Lib;
+﻿using System;
+using tyuiu.cources.programming.interfaces.Sprint3;
 
-
-public class DataService:ISprint3Task0V21
+namespace Tyuiu.mamatkulovF0.Sprint3.Task0.V21.Lib
 {
-    public static double CalculateSum(double a)
+    public class DataService : ISprint3Task0V21
     {
-        double sum = 0;
-        for (int k = 1; k <= 13; k++)
+        public static double CalculateSum(double a)
         {
-            sum += (Math.Pow(a, k) + 0.25) * Math.Sin(k);
+            throw new NotImplementedException();
         }
-        return sum; 
-    }
 
-    double ISprint3Task0V21.GetSumSeries(double value, int startValue, int stopValue)
-    {
-        throw new NotImplementedException();
+        public double GetSumSeries(double value, int startValue, int stopValue)
+        {
+            
+            double sum = 0;
+            for (int k = startValue; k <= stopValue; k++)
+            {
+                sum += (Math.Pow(value, k) + 0.25) * Math.Sin(k);
+            }
+            return sum;
+        }
+
+        
     }
 }
 
 
-
-
-
-   
