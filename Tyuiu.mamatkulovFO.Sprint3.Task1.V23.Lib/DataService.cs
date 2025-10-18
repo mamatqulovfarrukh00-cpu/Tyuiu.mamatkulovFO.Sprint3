@@ -11,7 +11,7 @@ namespace Tyuiu.mamatkulovF0.Sprint3.Task1.V23.Lib
             for (int k = startValue; k <= stopValue; k++)
             {
                 double denominator = Math.Sin(x) + Math.Pow(x, k);
-                // Agar denominator 0 bo'lsa, xatolik bo'ladi, lekin x=5 da xavfli emas
+               
                 double term = Math.Pow(300.0 / denominator, k);
                 product *= term;
             }
