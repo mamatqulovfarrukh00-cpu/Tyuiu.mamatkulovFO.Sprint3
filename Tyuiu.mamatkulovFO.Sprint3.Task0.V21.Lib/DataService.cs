@@ -1,7 +1,7 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint3;
 namespace Tyuiu.mamatkulovFO.Sprint3.Task0.V21.Lib
 {
-    public class DataService
+    public class DataService:ISprint3Task0V21
     {
         public static double CalculateSum(double a)
         {
@@ -11,6 +11,11 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task0.V21.Lib
                 sum += (Math.Pow(a, k) + 0.25) * Math.Sin(k);
             }
             return sum;
+        }
+
+        public double GetSumSeries(double value, int startValue, int stopValue)
+        {
+            throw new NotImplementedException();
         }
     }
 }
