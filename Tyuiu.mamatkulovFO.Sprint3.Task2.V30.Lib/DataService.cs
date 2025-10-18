@@ -13,7 +13,7 @@ namespace Tyuiu.mamatkulovF0.Sprint3.Task2.V30.Lib
                 double term = (x * x * i) + 2; // (x² * i) + 2
                 product *= term;
             }
-            return product;
+            return Math.Round(product, 2);
         }
 
         public static double CalculateMultiply(double x)
