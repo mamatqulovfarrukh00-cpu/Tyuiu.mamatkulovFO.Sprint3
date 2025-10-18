@@ -5,14 +5,8 @@ namespace Tyuiu.mamatkulovF0.Sprint3.Task0.V21.Lib
 {
     public class DataService : ISprint3Task0V21
     {
-        public static double CalculateSum(double a)
-        {
-            throw new NotImplementedException();
-        }
-
         public double GetSumSeries(double value, int startValue, int stopValue)
         {
-            
             double sum = 0;
             for (int k = startValue; k <= stopValue; k++)
             {
@@ -21,8 +15,10 @@ namespace Tyuiu.mamatkulovF0.Sprint3.Task0.V21.Lib
             return sum;
         }
 
-        
+        public static double CalculateSum(double a)
+        {
+            return new DataService().GetSumSeries(a, 1, 13);
+        }
     }
 }
-
 
