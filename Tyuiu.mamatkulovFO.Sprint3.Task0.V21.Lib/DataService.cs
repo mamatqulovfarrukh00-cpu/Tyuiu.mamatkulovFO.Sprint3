@@ -12,7 +12,7 @@ namespace Tyuiu.mamatkulovF0.Sprint3.Task0.V21.Lib
             {
                 sum += (Math.Pow(value, k) + 0.25) * Math.Sin(k);
             }
-            return sum;
+            return Math.Round(sum, 3);
         }
 
         public static double CalculateSum(double a)
