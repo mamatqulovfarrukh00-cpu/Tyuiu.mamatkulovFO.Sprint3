@@ -15,7 +15,7 @@ namespace Tyuiu.mamatkulovF0.Sprint3.Task1.V23.Lib
                 double term = Math.Pow(300.0 / denominator, k);
                 product *= term;
             }
-            return product;
+            return Math.Round(product, 3);
         }
 
         public static double CalculateMultiply(double x)
