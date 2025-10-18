@@ -9,10 +9,10 @@ class Program
     {
         double a = 1.5;
         double result = CalculateSum(a);
-        Console.WriteLine($"{result:F3}"); // Chiqarish
+        Console.WriteLine($"{result:F3}"); 
     }
 
-    // Metod — testlar uchun
+    
     public static double CalculateSum(double a)
     {
         double sum = 0;
@@ -20,7 +20,7 @@ class Program
         {
             sum += (Math.Pow(a, k) + 0.25) * Math.Sin(k);
         }
-        return sum; // 👈 Muhim!
+        return sum; 
     }
 }
 
