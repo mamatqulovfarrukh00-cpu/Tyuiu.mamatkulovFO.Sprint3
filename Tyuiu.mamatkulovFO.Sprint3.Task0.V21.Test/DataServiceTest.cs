@@ -2,17 +2,19 @@
 namespace Tyuiu.mamatkulovFO.Sprint3.Task0.V21.Test
 {
     [TestClass]
-    public sealed class DataServiceTest
+    public class DataServiceTest
     {
-        public void CalculateSum_ShouldReturnCorrectValue_ForA_1_5()
+        public void CalculateSum_ForA1_5_ShouldBeApproximatelyMinus63_727()
         {
+            // Arrange
             double a = 1.5;
-            double expected = -63.727; // Kutilgan natija
+            double expected = -63.727;
 
+            // Act
             double actual = MathService.CalculateSum(a);
 
-            // Natijani 3 xonagacha tekshirish
-            Assert.AreEqual(expected, actual, 3);
+            // Assert — 3 xonagacha aniqlikda solishtirish
+            Assert.AreEqual(expected, actual: 3);
         }
     }
 }
