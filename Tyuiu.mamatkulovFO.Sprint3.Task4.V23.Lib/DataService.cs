@@ -2,7 +2,6 @@
 namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23.Lib
 {
     public class DataService : ISprint3Task4V23
-
     {
         public static double CalculateFunctionProduct()
         {
@@ -19,6 +18,7 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23.Lib
 
             return product;
         }
+
         public double Calculate(int startValue, int stopValue)
         {
             throw new NotImplementedException();
