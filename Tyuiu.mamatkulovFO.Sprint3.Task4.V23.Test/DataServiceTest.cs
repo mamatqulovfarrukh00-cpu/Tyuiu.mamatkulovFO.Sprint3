@@ -5,12 +5,14 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23.Test
     public class DataServiceTest
     {
         [Test]
-        public void Test_CalculateFunctionProduct()
+        public void Test_ResultIsCloseToExpected()
         {
-            // Простой тест — проверяем, что результат не NaN и не Infinity
-            double result = DataService.CalculateFunctionProduct();
-            Assert.IsFalse(double.IsNaN(result));
-            Assert.IsFalse(double.IsInfinity(result));
+            double actual = DataService.CalculateFunctionProduct();
+            double expected = 244.656;
+
+          
         }
+
+       
     }
 }

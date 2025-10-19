@@ -5,13 +5,8 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Вычисляем значение функции y = cos(x)/x + 3 для x от -5 до 5 (x ≠ 0)...");
-            Console.WriteLine("Значения перемножаются.");
-
             double result = DataService.CalculateFunctionProduct();
-
-            Console.WriteLine($"Результат (произведение): {result:F6}");
-            Console.ReadKey();
+            Console.WriteLine(result); // ⚠️ ВАЖНО: только число, без текста!
         }
     }
 }
