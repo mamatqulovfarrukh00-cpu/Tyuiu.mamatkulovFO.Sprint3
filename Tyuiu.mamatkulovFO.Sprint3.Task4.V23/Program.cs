@@ -6,11 +6,7 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23
     {
         static void Main(string[] args)
         {
-            
-            
-
-            
-            Console.WriteLine(Dataservice.CalculateFunctionProduct());
+             Console.WriteLine(Dataservice.CalculateFunctionProduct());
         }
 
 
