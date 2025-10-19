@@ -1,5 +1,5 @@
-﻿using Tyuiu.mamatkulovFO.Sprint3.Task3.V23.Lib;
-namespace Tyuiu.mamatkulovFO.Sprint3.Task3.V23
+﻿using Tyuiu.mamatkulovFO.Sprint3.Task4.V23.Lib;
+namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23
 {
     internal class Program
     {
