@@ -6,7 +6,7 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23
         static void Main(string[] args)
         {
             double result = DataService.CalculateFunctionProduct();
-            Console.WriteLine(result); // ⚠️ ВАЖНО: только число, без текста!
+            Console.WriteLine(result); 
         }
     }
 }
