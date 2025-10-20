@@ -12,7 +12,5 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23
             Console.WriteLine("Результат: " + result);
             Console.ReadKey();
         }
-
-
     }
 }

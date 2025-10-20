@@ -17,7 +17,7 @@ public class DataService : ISprint3Task4V23
             product *= y;
         }
 
-        return product;
+        return Math.Round(product, 3); 
     }
     public double Calculate(int startValue, int stopValue)
     {
