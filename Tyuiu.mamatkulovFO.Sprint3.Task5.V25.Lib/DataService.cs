@@ -24,9 +24,6 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task5.V25.Lib
 
             return Math.Round(sum, 3);
         }
-        double ISprint3Task5V25.GetSumSumSeries(int x, int startValue1, int startValue2, int stopValue1, int stopValue2)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
