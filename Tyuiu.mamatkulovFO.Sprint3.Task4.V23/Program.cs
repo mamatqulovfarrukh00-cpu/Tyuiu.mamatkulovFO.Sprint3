@@ -8,8 +8,7 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23
         {
             var service = new DataService();
             double result = service.CalculateProduct();
-
-            Console.WriteLine("Результат: " + result);
+            Console.WriteLine(result);
             Console.ReadKey();
         }
     }

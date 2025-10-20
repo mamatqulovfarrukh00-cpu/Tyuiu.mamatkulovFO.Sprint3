@@ -11,7 +11,7 @@ public class DataService : ISprint3Task4V23
         for (int x = -5; x <= 5; x++)
         {
             if (x == 0)
-                continue;
+                continue; 
 
             double y = Math.Cos(x) / x + 3;
             product *= y;
@@ -19,6 +19,7 @@ public class DataService : ISprint3Task4V23
 
         return Math.Round(product, 3);
     }
+    
     public double Calculate(int startValue, int stopValue)
     {
         throw new NotImplementedException();

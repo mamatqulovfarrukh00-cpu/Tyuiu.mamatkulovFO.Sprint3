@@ -11,9 +11,8 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23.Test
         {
             var service = new DataService();
             double result = service.CalculateProduct();
-
             double expected = 244.656;
-            Assert.AreEqual(expected, result, 0.001, "Результат не совпадает с ожидаемым");
+            Assert.AreEqual(expected, result, 0.001);
         }
     }
 }
