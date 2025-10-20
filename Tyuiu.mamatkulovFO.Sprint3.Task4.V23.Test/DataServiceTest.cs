@@ -3,15 +3,17 @@ using Tyuiu.mamatkulovFO.Sprint3.Task4.V23.Lib;
 
 namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23.Test
 {
-    class Program
+    [TestClass]
+    public class DataServiceTest
     {
-        static void Main(string[] args)
+        [TestMethod]
+        public void ValidCalculateProductTest()
         {
             var service = new DataService();
             double result = service.CalculateProduct();
 
-            Console.WriteLine("Результат: " + result);
-            Console.ReadKey();
+            double expected = 244.656;
+            Assert.AreEqual(expected, result, 0.001, "Результат не совпадает с ожидаемым");
         }
     }
 }
