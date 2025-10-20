@@ -7,9 +7,8 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23
         static void Main(string[] args)
         {
             var service = new DataService();
-            double result = service.CalculateProduct();
 
-            Console.WriteLine("Произведение всех значений y: " + result);
+            Console.WriteLine("Произведение всех значений y: ");
             Console.WriteLine("Нажмите Enter для выхода...");
             Console.ReadLine();
         }
