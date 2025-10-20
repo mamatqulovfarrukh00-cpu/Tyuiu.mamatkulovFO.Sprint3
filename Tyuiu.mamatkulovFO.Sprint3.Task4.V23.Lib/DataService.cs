@@ -8,10 +8,10 @@ public class DataService : ISprint3Task4V23
     {
         double product = 1.0;
 
-        for (int x = -5; x <= 5; x++) 
+        for (int x = -5; x <= 5; x++)
         {
-            if (x == 0) 
-                break;
+            if (x == 0)
+                continue; 
 
             double y = Math.Cos(x) / x + 3;
             product *= y;
