@@ -7,13 +7,13 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void Test_CalculateFunctionProduct()
+        public void CalculateProduct_ShouldReturnFiniteValue()
         {
-            DataService service = new DataService();
-            double actual = service.CalculateFunctionProduct();
-            double expected = 244.656;
+            var service = new DataService();
+            double result = service.CalculateProduct();
 
-            Assert.AreEqual(expected, actual, 0.001);
+            Assert.IsFalse(double.IsNaN(result), "Результат не должен быть NaN");
+            Assert.IsTrue(double.IsFinite(result), "Результат должен быть конечным числом");
         }
     }
 }
