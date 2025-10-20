@@ -1,4 +1,5 @@
-﻿using Tyuiu.mamatkulovFO.Sprint3.Task5.V25.Lib;
+﻿using System;
+using Tyuiu.mamatkulovFO.Sprint3.Task5.V25.Lib;
 namespace Tyuiu.mamatkulovFO.Sprint3.Task5.V25
 {
     class Program
