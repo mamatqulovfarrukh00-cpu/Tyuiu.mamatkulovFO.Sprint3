@@ -4,24 +4,21 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23.Lib;
 
 public class DataService : ISprint3Task4V23
 {
-    [TestMethod]
-    public void CalculateProduct_ShouldReturnFiniteValue()
+    public double CalculateProduct()
     {
-        var service = new DataService();
-        double result = service.CalculateProduct();
+        double product = 1.0;
 
-        
-        Assert.IsFalse(double.IsNaN(result));
+        for (int x = -5; x <= 5; x++) 
+        {
+            if (x == 0) 
+                break;
 
-      
-        Assert.IsTrue(double.IsFinite(result));
+            double y = Math.Cos(x) / x + 3;
+            product *= y;
+        }
+
+        return product;
     }
-
-    private double CalculateProduct()
-    {
-        throw new NotImplementedException();
-    }
-
     public double Calculate(int startValue, int stopValue)
     {
         throw new NotImplementedException();
