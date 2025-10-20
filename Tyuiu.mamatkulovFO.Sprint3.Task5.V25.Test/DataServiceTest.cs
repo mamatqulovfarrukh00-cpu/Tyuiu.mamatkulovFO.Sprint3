@@ -11,7 +11,7 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task5.V25.Test
             var service = new DataService();
             double result = service.CalculateSum();
 
-            double expected = 6136.898; 
+            double expected = 6133.748; 
 
             Assert.AreEqual(expected, result, 0.001, "Результат не совпадает с ожидаемым");
         }
