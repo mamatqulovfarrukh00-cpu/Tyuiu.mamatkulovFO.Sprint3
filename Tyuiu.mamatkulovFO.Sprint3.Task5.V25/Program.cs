@@ -5,7 +5,7 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task5.V25
     {
         static void Main(string[] args)
         {
-            var service = new Tyuiu.mamatkulovFO.Sprint3.Task5.V25.Lib.DataService();
+            var service = new DataService();
             double result = service.CalculateSum();
 
             Console.WriteLine("Результат: " + result);
