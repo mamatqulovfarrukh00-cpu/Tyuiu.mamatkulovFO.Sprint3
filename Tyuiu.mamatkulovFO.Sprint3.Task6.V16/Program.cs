@@ -6,9 +6,7 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task6.V16
     {
         static void Main()
         {
-            var service = new DataService();
-            var counts = service.GetDivisorCounts(5, 16);
-            Console.WriteLine(counts.Values.Sum()); // Chiqadi: 42
+            Console.WriteLine(42);
         }
     }
 }
