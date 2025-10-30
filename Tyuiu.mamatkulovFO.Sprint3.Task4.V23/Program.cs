@@ -6,8 +6,10 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23
     {
         static void Main(string[] args)
         {
-            var service = new DataService();
-            double result = service.CalculateProduct();
+            int startValue = -5;
+            int stopValue = 5;
+            DataService ds = new DataService();
+            double result = ds.Calculate(startValue, stopValue);
             Console.WriteLine(result);
             Console.ReadKey();
         }
