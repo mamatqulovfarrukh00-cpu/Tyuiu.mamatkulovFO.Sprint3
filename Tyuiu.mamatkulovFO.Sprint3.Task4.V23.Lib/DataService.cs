@@ -7,18 +7,12 @@ public class DataService : ISprint3Task4V23
     public double Calculate(int startValue, int stopValue)
     {
         double product = 1.0;
-
         for (int x = startValue; x <= stopValue; x++)
         {
-            if (x == 0)
-            {
-                continue; // Пропускаем x=0 — чтобы избежать деления на ноль!
-            }
-
+            if (x == 0) continue; // ⚠️ Обязательно!
             double y = Math.Cos(x) / x + 3;
             product *= y;
         }
-
-        return product;
+        return Math.Round(product, 3);
     }
 }
