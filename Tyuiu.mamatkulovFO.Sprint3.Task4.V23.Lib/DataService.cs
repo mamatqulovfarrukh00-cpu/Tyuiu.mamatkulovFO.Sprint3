@@ -12,7 +12,7 @@ public class DataService : ISprint3Task4V23
         {
             if (x == 0)
             {
-                continue; // Пропускаем x=0, чтобы избежать деления на ноль
+                continue; // Пропускаем x=0 — чтобы избежать деления на ноль!
             }
 
             double y = Math.Cos(x) / x + 3;
