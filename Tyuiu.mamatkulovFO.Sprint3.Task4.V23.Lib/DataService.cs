@@ -9,7 +9,7 @@ public class DataService : ISprint3Task4V23
         double product = 1.0;
         for (int x = startValue; x <= stopValue; x++)
         {
-            if (x == 0) continue; // ⚠️ Обязательно!
+            if (x == 0) continue; 
             double y = Math.Cos(x) / x + 3;
             product *= y;
         }

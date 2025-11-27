@@ -14,7 +14,7 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23
 
             for (int x = startValue; x <= stopValue; x++)
             {
-                if (x == 0) continue; // ⚠️ КРИТИЧЕСКИ ВАЖНО: ПРОПУСКАЕМ X=0!
+                if (x == 0) continue; 
                 double y = Math.Cos(x) / x + 3;
                 product *= y;
             }
@@ -26,7 +26,7 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23
             Console.WriteLine("* Тема: Базовые навыки работы в C#                                        *");
             Console.WriteLine("* Задание #4                                                              *");
             Console.WriteLine("* Вариант #23                                                             *");
-            Console.WriteLine("* Выполнил: Маматкулов  Ф,О                                               *");
+            Console.WriteLine("* Выполнил: Маматкулов Ф.О                                                *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine($"* РЕЗУЛЬТАТ: {result:F3}                                                 *");
             Console.WriteLine("***************************************************************************");
