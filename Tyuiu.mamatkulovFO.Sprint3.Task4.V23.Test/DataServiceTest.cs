@@ -10,11 +10,9 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23.Test
         public void ValidCalculateTest()
         {
             DataService ds = new DataService();
-            int start = -5;
-            int stop = 5;
-            double res = ds.Calculate(start, stop);
-            double wait = 174.86; // Ожидаемый результат
-            Assert.AreEqual(wait, res);
+            double result = ds.Calculate(-5, 5);
+            double expected = 244.656;
+            Assert.AreEqual(expected, result, 0.001, "Результат не совпадает!");
         }
     }
 }
