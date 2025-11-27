@@ -1,5 +1,5 @@
 ﻿
-namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23.Test
+namespace Tyuiu.mamatkulovFO.Sprint4.Task23.V16.Test
 {
     internal class TestFixtureAttribute : Attribute
     {

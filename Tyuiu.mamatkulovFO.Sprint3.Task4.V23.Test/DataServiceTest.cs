@@ -1,4 +1,4 @@
-﻿
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tyuiu.mamatkulovFO.Sprint3.Task4.V23.Lib;
 
 namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23.Test
@@ -7,12 +7,14 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidCalculateProductTest()
+        public void ValidCalculateTest()
         {
-            var service = new DataService();
-            double result = service.CalculateProduct();
-            double expected = 244.656;
-            Assert.AreEqual(expected, result, 0.001);
+            DataService ds = new DataService();
+            int start = -5;
+            int stop = 5;
+            double res = ds.Calculate(start, stop);
+            double wait = 174.86; // Ожидаемый результат
+            Assert.AreEqual(wait, res);
         }
     }
 }
