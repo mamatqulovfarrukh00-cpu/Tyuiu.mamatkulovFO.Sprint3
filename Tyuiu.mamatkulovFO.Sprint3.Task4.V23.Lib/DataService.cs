@@ -6,13 +6,19 @@ public class DataService : ISprint3Task4V23
 {
     public double Calculate(int startValue, int stopValue)
     {
-        double product = 1.0;
+        double product = 1.0; // Начальное значение для умножения
+
         for (int x = startValue; x <= stopValue; x++)
         {
-            if (x == 0) continue; 
+            if (x == 0)
+            {
+                break; // Прерываем цикл при x = 0, чтобы избежать деления на ноль
+            }
+
             double y = Math.Cos(x) / x + 3;
             product *= y;
         }
-        return Math.Round(product, 3);
+
+        return product;
     }
 }

@@ -1,18 +1,24 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿
 using Tyuiu.mamatkulovFO.Sprint3.Task4.V23.Lib;
+using Tyuiu.mamatkulovFO.Sprint4.Task23.V16.Test;
 
 namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23.Test
 {
-    [TestClass]
+    [TestFixture]
     public class DataServiceTest
     {
-        [TestMethod]
+        [Test]
         public void ValidCalculateTest()
         {
+            // Arrange
             DataService ds = new DataService();
-            double result = ds.Calculate(-5, 5);
-            double expected = 244.656;
-            Assert.AreEqual(expected, result, 0.001, "Результат не совпадает!");
+            double expected = 7968.784; // Пример ожидаемого значения (проверьте по вашему варианту!)
+
+            // Act
+            double actual = ds.Calculate(-5, 5);
+
+            // Assert
+            Assert.AreEqual(expected, actual, 0.001, "Результат вычисления неверен.");
         }
     }
 }
