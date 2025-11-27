@@ -10,15 +10,12 @@ namespace Tyuiu.mamatkulovFO.Sprint3.Task4.V23.Test
         [Test]
         public void ValidCalculateTest()
         {
-            // Arrange
             DataService ds = new DataService();
-            double expected = 7968.784; // Пример ожидаемого значения (проверьте по вашему варианту!)
+            double expected = 244.656; // Точно как в системе!
 
-            // Act
             double actual = ds.Calculate(-5, 5);
 
-            // Assert
-            Assert.AreEqual(expected, actual, 0.001, "Результат вычисления неверен.");
+            Assert.AreEqual(expected, actual, 0.001, "Результат должен быть 244.656");
         }
     }
 }
