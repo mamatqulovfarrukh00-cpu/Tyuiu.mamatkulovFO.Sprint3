@@ -9,10 +9,13 @@ public class DataService : ISprint3Task4V23
         double product = 1.0;
         for (int x = startValue; x <= stopValue; x++)
         {
-            if (x == 0) continue; // ⚠️ X=0 НИ ҲИСОБЛАМАЙМИЗ!
+            if (x == 0)
+            {
+                break; // ❗️ X=0 bo'lganda tsikldan darhol chiqish kerak!
+            }
             double y = Math.Cos(x) / x + 3;
             product *= y;
         }
-        return Math.Round(product, 3); // 3 знакдан кейин яхлитлаймиз
+        return Math.Round(product, 3); // 3 raqamdan keyin yaxlitlash
     }
 }
